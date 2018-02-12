@@ -4,9 +4,10 @@ sudo apt-get upgrade -y && \
 
 sudo apt-get install free-ipa-client -y && \
 
-ipa-client-install --mkhomedir && \
+sudo ipa-client-install --mkhomedir && \
 
-systemctl enable oddjob; systemctl start oddjob && \
+sudo systemctl enable oddjob && \
+sudo systemctl start oddjob && \
 
 sudo bash -c "cat > /usr/share/pam-configs/mkhomedir" <<EOF
 Name: activate mkhomedir
