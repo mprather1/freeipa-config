@@ -2,7 +2,7 @@ sudo apt-get update && \
 
 sudo apt-get upgrade -y && \
 
-sudo apt-get install free-ipa-client -y && \
+sudo apt-get install freeipa-client -y && \
 
 sudo ipa-client-install --mkhomedir && \
 
